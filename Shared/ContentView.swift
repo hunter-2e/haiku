@@ -11,6 +11,7 @@ struct CalendarView: View{
     
     @State var selectedDate = Date()
     @State var editView = false
+    @Binding var haikus:[String:String]
     
     
     var body: some View {
@@ -32,7 +33,7 @@ struct CalendarView: View{
                     editView.toggle()
                 }
                 .fullScreenCover(isPresented: $editView, content: {
-                    EditView(selectedDate: $selectedDate)
+                    EditView(selectedDate: $selectedDate, haikus: $haikus)
                 })
                 .foregroundColor(.white)
                 .padding()
@@ -55,6 +56,7 @@ struct CalendarView: View{
 struct ContentView: View {
     
     @State var calendarView = false
+    @State var haikus = [String: String]()
     
     var body: some View {
 
@@ -79,7 +81,7 @@ struct ContentView: View {
                         calendarView.toggle()
                     }
                     .fullScreenCover(isPresented: $calendarView, content: {
-                        CalendarView()
+                        CalendarView(haikus:  $haikus)
                     })
                     
                     .foregroundColor(/*@START_MENU_TOKEN@*/.white/*@END_MENU_TOKEN@*/)
@@ -100,6 +102,11 @@ struct ContentView: View {
 
 struct EditView: View {
     
+    @Binding var selectedDate:Date
+    @Binding var haikus:[String:String]
+    
+
+    
     let changeToDay = DateFormatter()
     
     var editDate:String {
@@ -107,14 +114,27 @@ struct EditView: View {
         return changeToDay.string(from: selectedDate)
     }
     
-    @Binding var selectedDate:Date
+    
     
     @State var backToCalendar = false
-    @State var line1 = ""
-    @State var line2 = ""
-    @State var line3 = ""
     
-    var haikus = [Date: String]()
+    var line1:String {
+        haikus[editDate, default: ""]
+    }
+    var line2:String {
+        haikus[editDate, default: ""]
+    }
+    var line3:String {
+        haikus[editDate, default: ""]
+    }
+    
+    @State var editLine1:String = ""
+    @State var editLine2:String = ""
+    @State var editLine3:String = ""
+    
+    let defaults = UserDefaults.standard
+    
+    
     
     var body: some View {
         
@@ -151,15 +171,20 @@ struct EditView: View {
                 Spacer()
                 
                 VStack{
-                    TextField("Line 1", text: $line1).multilineTextAlignment(.center)
-                    TextField("Line 2", text: $line2).multilineTextAlignment(.center)
-                    TextField("Line 3", text: $line3).multilineTextAlignment(.center)
+                    TextField("Line 1", text: $editLine1).multilineTextAlignment(.center)
+                    TextField("Line 2", text: $editLine2).multilineTextAlignment(.center)
+                    TextField("Line 3", text: $editLine3).multilineTextAlignment(.center)
                     
                     Button("Done"){
+                        print(haikus)
+                        haikus[editDate] = editLine1 + editLine2 + editLine3
+                        
+                        defaults.set(haikus, forKey: editDate)
+                        
                         backToCalendar.toggle()
                         }
                     .fullScreenCover(isPresented: $backToCalendar, content: {
-                        CalendarView()
+                        CalendarView(haikus:$haikus)
                     })
                 }
                 
@@ -170,6 +195,8 @@ struct EditView: View {
         
     }
 }
+
+
 
 
 struct ContentView_Previews: PreviewProvider {
