@@ -56,12 +56,45 @@ struct EditView: View {
                     .fontWeight(.black)
                     .foregroundColor(Color.black)
                 
-                Spacer()
                 
                 VStack{
-                    TextField("Line 1", text: $editLine1).multilineTextAlignment(.center)
-                    TextField("Line 2", text: $editLine2).multilineTextAlignment(.center)
-                    TextField("Line 3", text: $editLine3).multilineTextAlignment(.center)
+                    Spacer()
+                    
+                    HStack{
+                        Spacer()
+                        
+                        Text("5").font(.title).fontWeight(.bold).foregroundColor(.black)
+                         
+                        
+                        TextField("Line 1", text: $editLine1)
+                            .frame(width:200).multilineTextAlignment(.center).textFieldStyle(RoundedBorderTextFieldStyle())
+                        
+                        Spacer()
+                    }
+                    
+                    HStack{
+                        Spacer()
+                        
+                        Text("7").font(.title).fontWeight(.bold).foregroundColor(.black)
+                        
+                        TextField("Line 2", text: $editLine2)
+                            .frame(width:300).multilineTextAlignment(.center).textFieldStyle(RoundedBorderTextFieldStyle())
+                        
+                        Spacer()
+                    }
+                    
+                    HStack{
+                        Spacer()
+                        
+                        Text("5").font(.title).fontWeight(.bold).foregroundColor(.black).textFieldStyle(RoundedBorderTextFieldStyle())
+                         
+                        
+                        TextField("Line 3", text: $editLine3).frame(width: 200).multilineTextAlignment(.center).textFieldStyle(RoundedBorderTextFieldStyle())
+                        
+                        Spacer()
+                    }
+                    
+                    Spacer()
                     
                     HStack{
                         Spacer()

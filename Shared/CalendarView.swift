@@ -31,6 +31,7 @@ struct CalendarView: View{
                 Spacer()
                 
                 DatePicker("Pick Date", selection: $selectedDate, displayedComponents: .date).datePickerStyle(GraphicalDatePickerStyle()).accentColor(.red)
+                    .colorScheme(.light)
                 
                 Spacer()
                 

@@ -25,9 +25,11 @@ struct ContentView: View {
                 Text("Daily")
                     .font(.largeTitle)
                     .fontWeight(.bold)
+                    .foregroundColor(.black)
                 Text("Haiku")
                     .font(.largeTitle)
                     .fontWeight(.bold)
+                    .foregroundColor(.black)
                 
                 Spacer()
                 
