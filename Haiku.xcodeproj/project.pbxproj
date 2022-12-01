@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D058ECE29385079007ECFF7 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D058ECD29385079007ECFF7 /* EditView.swift */; };
+		7D058ECF29385079007ECFF7 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D058ECD29385079007ECFF7 /* EditView.swift */; };
+		7D058ED1293850C2007ECFF7 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D058ED0293850C2007ECFF7 /* CalendarView.swift */; };
+		7D058ED2293850C2007ECFF7 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D058ED0293850C2007ECFF7 /* CalendarView.swift */; };
 		7D46B5732935D381009724FD /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D46B5722935D381009724FD /* Tests_iOS.swift */; };
 		7D46B57E2935D381009724FD /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D46B57D2935D381009724FD /* Tests_macOS.swift */; };
 		7D46B5802935D381009724FD /* HaikuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D46B5572935D37A009724FD /* HaikuApp.swift */; };
@@ -35,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D058ECD29385079007ECFF7 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		7D058ED0293850C2007ECFF7 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		7D46B5572935D37A009724FD /* HaikuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaikuApp.swift; sourceTree = "<group>"; };
 		7D46B5582935D37A009724FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7D46B5592935D381009724FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,6 +106,8 @@
 			children = (
 				7D46B5572935D37A009724FD /* HaikuApp.swift */,
 				7D46B5582935D37A009724FD /* ContentView.swift */,
+				7D058ECD29385079007ECFF7 /* EditView.swift */,
+				7D058ED0293850C2007ECFF7 /* CalendarView.swift */,
 				7D46B5592935D381009724FD /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -310,6 +318,8 @@
 			files = (
 				7D46B5822935D381009724FD /* ContentView.swift in Sources */,
 				7D46B5802935D381009724FD /* HaikuApp.swift in Sources */,
+				7D058ED1293850C2007ECFF7 /* CalendarView.swift in Sources */,
+				7D058ECE29385079007ECFF7 /* EditView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +329,8 @@
 			files = (
 				7D51336529369932004C0300 /* HaikuApp.swift in Sources */,
 				7D513364293698EF004C0300 /* ContentView.swift in Sources */,
+				7D058ED2293850C2007ECFF7 /* CalendarView.swift in Sources */,
+				7D058ECF29385079007ECFF7 /* EditView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
