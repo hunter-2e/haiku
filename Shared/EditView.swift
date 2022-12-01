@@ -26,8 +26,8 @@ struct EditView: View {
     @State var backToCalendar = false
     
     var haiku:String {
-        let haikus = defaults.object(forKey: "SavedHaikus") as? [String:String] ?? [:]
-        return haikus[editDate, default: ""]
+        let savedHaikus = defaults.object(forKey: "SavedHaikus") as? [String:String] ?? [:]
+        return savedHaikus[editDate, default: ""]
     }
     
     @State var editLine1:String = "\n"

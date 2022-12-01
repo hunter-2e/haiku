@@ -19,9 +19,10 @@ struct CalendarView: View{
         ZStack{
             Color.yellow.ignoresSafeArea()
             
-            Spacer()
             
             VStack{
+                Spacer()
+                
                 Text("Select Daily Haiku")
                     .font(.largeTitle)
                     .fontWeight(.bold)
