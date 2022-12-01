@@ -21,6 +21,16 @@ struct EditView: View {
         return changeToDay.string(from: selectedDate)
     }
     
+    var editable:Bool {
+        changeToDay.dateStyle = .short
+        if(changeToDay.string(from: Date()) == editDate){
+            return true
+        }
+        else {
+            return false
+        }
+    }
+    
     
     
     @State var backToCalendar = false
@@ -55,63 +65,68 @@ struct EditView: View {
                     .font(.title)
                     .fontWeight(.black)
                     .foregroundColor(Color.black)
+                    .multilineTextAlignment(.center)
                 
                 
-                VStack{
-                    Spacer()
-                    
-                    HStack{
+                
+                if editable{
+                    VStack{
                         Spacer()
                         
-                        Text("5").font(.title).fontWeight(.bold).foregroundColor(.black)
-                         
-                        
-                        TextField("Line 1", text: $editLine1)
-                            .frame(width:200).multilineTextAlignment(.center).textFieldStyle(RoundedBorderTextFieldStyle())
-                        
-                        Spacer()
-                    }
-                    
-                    HStack{
-                        Spacer()
-                        
-                        Text("7").font(.title).fontWeight(.bold).foregroundColor(.black)
-                        
-                        TextField("Line 2", text: $editLine2)
-                            .frame(width:300).multilineTextAlignment(.center).textFieldStyle(RoundedBorderTextFieldStyle())
-                        
-                        Spacer()
-                    }
-                    
-                    HStack{
-                        Spacer()
-                        
-                        Text("5").font(.title).fontWeight(.bold).foregroundColor(.black).textFieldStyle(RoundedBorderTextFieldStyle())
-                         
-                        
-                        TextField("Line 3", text: $editLine3).frame(width: 200).multilineTextAlignment(.center).textFieldStyle(RoundedBorderTextFieldStyle())
-                        
-                        Spacer()
-                    }
-                    
-                    Spacer()
-                    
-                    HStack{
-                        Spacer()
-                        
-                        Button("Save"){
-                            haikus[editDate] = editLine1 + "\n" + editLine2 + "\n" + editLine3
+                        HStack{
+                            Spacer()
                             
-                            defaults.set(haikus, forKey: "SavedHaikus")
+                            Text("5").font(.title).fontWeight(.bold).foregroundColor(.black)
+                             
                             
-                            backToCalendar.toggle()
+                            TextField("Line 1", text: $editLine1)
+                                .frame(width:200).multilineTextAlignment(.center).textFieldStyle(RoundedBorderTextFieldStyle())
+                            
+                            Spacer()
                         }
-                        .foregroundColor(/*@START_MENU_TOKEN@*/.white/*@END_MENU_TOKEN@*/)
-                        .padding()
-                        .background(Color.black)
-                        .fullScreenCover(isPresented: $backToCalendar, content: {
-                            CalendarView(haikus:$haikus, defaults: $defaults)
-                        })
+                        
+                        HStack{
+                            Spacer()
+                            
+                            Text("7").font(.title).fontWeight(.bold).foregroundColor(.black)
+                            
+                            TextField("Line 2", text: $editLine2)
+                                .frame(width:300).multilineTextAlignment(.center).textFieldStyle(RoundedBorderTextFieldStyle())
+                            
+                            Spacer()
+                        }
+                        
+                        HStack{
+                            Spacer()
+                            
+                            Text("5").font(.title).fontWeight(.bold).foregroundColor(.black).textFieldStyle(RoundedBorderTextFieldStyle())
+                             
+                            
+                            TextField("Line 3", text: $editLine3).frame(width: 200).multilineTextAlignment(.center).textFieldStyle(RoundedBorderTextFieldStyle())
+                            
+                            Spacer()
+                        }
+                        
+                        Spacer()
+                }
+                }
+                    
+                    HStack{
+
+                        if editable{
+                            Spacer()
+                            
+                            Button("Save"){
+                                haikus[editDate] = editLine1 + "\n" + editLine2 + "\n" + editLine3
+                                
+                                defaults.set(haikus, forKey: "SavedHaikus")
+                                
+                            }
+                            .foregroundColor(/*@START_MENU_TOKEN@*/.white/*@END_MENU_TOKEN@*/)
+                            .padding()
+                            .background(Color.black)
+                        }
+                        
                         
                         Spacer()
                         
@@ -128,8 +143,6 @@ struct EditView: View {
                         Spacer()
                         
                     }
-                    
-                }
                 
             }
             
