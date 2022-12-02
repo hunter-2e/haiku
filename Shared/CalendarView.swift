@@ -4,7 +4,6 @@
 //
 //  Created by Hunter Tuohey on 11/30/22.
 //
-
 import SwiftUI
 
 struct CalendarView: View{
@@ -17,7 +16,7 @@ struct CalendarView: View{
     var body: some View {
 
         ZStack{
-            Color.yellow.ignoresSafeArea()
+            LinearGradient(gradient: Gradient(colors: [Color.purple, Color.white]), startPoint: .topLeading, endPoint: .bottomTrailing).ignoresSafeArea()
             
             
             VStack{

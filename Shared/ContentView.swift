@@ -17,7 +17,7 @@ struct ContentView: View {
 
         
         ZStack{
-            Color.yellow.ignoresSafeArea()
+            LinearGradient(gradient: Gradient(colors: [Color.purple, Color.white]), startPoint: .topLeading, endPoint: .bottomTrailing).ignoresSafeArea()
             
             VStack{
                 Spacer()

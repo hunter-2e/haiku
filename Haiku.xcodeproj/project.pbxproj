@@ -3,22 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		7D058ECE29385079007ECFF7 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D058ECD29385079007ECFF7 /* EditView.swift */; };
-		7D058ECF29385079007ECFF7 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D058ECD29385079007ECFF7 /* EditView.swift */; };
 		7D058ED1293850C2007ECFF7 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D058ED0293850C2007ECFF7 /* CalendarView.swift */; };
-		7D058ED2293850C2007ECFF7 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D058ED0293850C2007ECFF7 /* CalendarView.swift */; };
 		7D46B5732935D381009724FD /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D46B5722935D381009724FD /* Tests_iOS.swift */; };
 		7D46B57E2935D381009724FD /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D46B57D2935D381009724FD /* Tests_macOS.swift */; };
 		7D46B5802935D381009724FD /* HaikuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D46B5572935D37A009724FD /* HaikuApp.swift */; };
 		7D46B5822935D381009724FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D46B5582935D37A009724FD /* ContentView.swift */; };
 		7D46B5842935D381009724FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D46B5592935D381009724FD /* Assets.xcassets */; };
 		7D46B5852935D381009724FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D46B5592935D381009724FD /* Assets.xcassets */; };
-		7D513364293698EF004C0300 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D46B5582935D37A009724FD /* ContentView.swift */; };
-		7D51336529369932004C0300 /* HaikuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D46B5572935D37A009724FD /* HaikuApp.swift */; };
+		A9F019A9A3A9482E8F8D1E1B /* Pods_Haiku__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98B00DF16378F20460A19B76 /* Pods_Haiku__iOS_.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +52,9 @@
 		7D46B5792935D381009724FD /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D46B57D2935D381009724FD /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		7D46B57F2935D381009724FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98B00DF16378F20460A19B76 /* Pods_Haiku__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Haiku__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBC8F25EC363B91434D754F6 /* Pods-Haiku (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Haiku (iOS).debug.xcconfig"; path = "Target Support Files/Pods-Haiku (iOS)/Pods-Haiku (iOS).debug.xcconfig"; sourceTree = "<group>"; };
+		E005FE757EBC0AD50E73FB1D /* Pods-Haiku (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Haiku (iOS).release.xcconfig"; path = "Target Support Files/Pods-Haiku (iOS)/Pods-Haiku (iOS).release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9F019A9A3A9482E8F8D1E1B /* Pods_Haiku__iOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +90,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34633A73C085D0B87442557D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98B00DF16378F20460A19B76 /* Pods_Haiku__iOS_.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7D46B5512935D37A009724FD = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +107,8 @@
 				7D46B5712935D381009724FD /* Tests iOS */,
 				7D46B57C2935D381009724FD /* Tests macOS */,
 				7D46B55F2935D381009724FD /* Products */,
+				CDE75F0318D024C8D580E33B /* Pods */,
+				34633A73C085D0B87442557D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,8 +117,8 @@
 			children = (
 				7D46B5572935D37A009724FD /* HaikuApp.swift */,
 				7D46B5582935D37A009724FD /* ContentView.swift */,
-				7D058ECD29385079007ECFF7 /* EditView.swift */,
 				7D058ED0293850C2007ECFF7 /* CalendarView.swift */,
+				7D058ECD29385079007ECFF7 /* EditView.swift */,
 				7D46B5592935D381009724FD /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -159,6 +170,15 @@
 			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
+		CDE75F0318D024C8D580E33B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BBC8F25EC363B91434D754F6 /* Pods-Haiku (iOS).debug.xcconfig */,
+				E005FE757EBC0AD50E73FB1D /* Pods-Haiku (iOS).release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -166,9 +186,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D46B5882935D381009724FD /* Build configuration list for PBXNativeTarget "Haiku (iOS)" */;
 			buildPhases = (
+				35CAEF86744682A743BCCDBA /* [CP] Check Pods Manifest.lock */,
 				7D46B55A2935D381009724FD /* Sources */,
 				7D46B55B2935D381009724FD /* Frameworks */,
 				7D46B55C2935D381009724FD /* Resources */,
+				AD1F5C2C9996A85BF795AF8D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -311,6 +333,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		35CAEF86744682A743BCCDBA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Haiku (iOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD1F5C2C9996A85BF795AF8D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Haiku (iOS)/Pods-Haiku (iOS)-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Haiku (iOS)/Pods-Haiku (iOS)-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Haiku (iOS)/Pods-Haiku (iOS)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7D46B55A2935D381009724FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -327,10 +391,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D51336529369932004C0300 /* HaikuApp.swift in Sources */,
-				7D513364293698EF004C0300 /* ContentView.swift in Sources */,
-				7D058ED2293850C2007ECFF7 /* CalendarView.swift in Sources */,
-				7D058ECF29385079007ECFF7 /* EditView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +539,7 @@
 		};
 		7D46B5892935D381009724FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBC8F25EC363B91434D754F6 /* Pods-Haiku (iOS).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -501,6 +562,7 @@
 		};
 		7D46B58A2935D381009724FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E005FE757EBC0AD50E73FB1D /* Pods-Haiku (iOS).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -618,7 +680,6 @@
 		7D46B5922935D381009724FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 5T7NC52NKJ;
@@ -640,7 +701,6 @@
 		7D46B5932935D381009724FD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 5T7NC52NKJ;

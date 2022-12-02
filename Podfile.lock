@@ -1,0 +1,16 @@
+PODS:
+  - SwiftSyllables (0.1.9)
+
+DEPENDENCIES:
+  - SwiftSyllables
+
+SPEC REPOS:
+  trunk:
+    - SwiftSyllables
+
+SPEC CHECKSUMS:
+  SwiftSyllables: 8f28abc9913a330b44e14da718daa2effecb18b7
+
+PODFILE CHECKSUM: 32c459f157478847ef8096b8155c716007058602
+
+COCOAPODS: 1.11.3

@@ -1,0 +1,720 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3509ECE0BB65B61584711D5C1BE99A8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		557033B9628D9DB5D855C51474EF0CCD /* SwiftSyllables-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C1987CCE7330271A225F32A33C0763 /* SwiftSyllables-dummy.m */; };
+		55E3A6AD306308B3446F271C53E72A65 /* SwiftSyllables-CMUDict in Resources */ = {isa = PBXBuildFile; fileRef = A0F0F07E0DC4624CB75E902DD75FA189 /* SwiftSyllables-CMUDict */; };
+		584156291F41A41A41D439FA507F546D /* Pods-Haiku (iOS)-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3159524AF4635037DFBB2C6807C717FA /* Pods-Haiku (iOS)-dummy.m */; };
+		66521D9FAD13C06AC6CD4C0018841603 /* SwiftSyllables-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E07D7BF740608C94EEA1C59E8A402CB /* SwiftSyllables-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77D2EE64EC7D5412F33F0D96630EAFEC /* Pods-Haiku (iOS)-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 61ABE4AD14DE25B7BC2D541567CD38DC /* Pods-Haiku (iOS)-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1D2CD7A1B85128928071A2E6D8FC3A4 /* cmudict in Resources */ = {isa = PBXBuildFile; fileRef = 46838FBAA4D3E59E5B1DF5D5DA536363 /* cmudict */; };
+		AA94C9EBD08F59C38B1AAB9D3A82140D /* SwiftSyllables.swift in Sources */ = {isa = PBXBuildFile; fileRef = C919898DC4C9FABC70B24D00F98AAF95 /* SwiftSyllables.swift */; };
+		B0E5CE37BA702EE5F29B9668DE1C61C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		F033DC818046F70C76C202E80229EE8F /* SwiftSyllablesHeuristic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1928628EAA6C308A86528CDEABB57AA8 /* SwiftSyllablesHeuristic.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		38F96B136E44A922D6601307655BE99A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 348428FEA01AD104131B7E8E8AE62C1E;
+			remoteInfo = SwiftSyllables;
+		};
+		A22E246253B78987EE0EB883685BF74C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 127B94127D901BCFD6B06C5F7E0DE76B;
+			remoteInfo = "SwiftSyllables-CMUDict";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0DA65171128FAA9D7F0ABB7FA97D8AFF /* SwiftSyllables.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftSyllables.modulemap; sourceTree = "<group>"; };
+		108AF252D6937D90EC5DC63F73B97EFB /* Pods-Haiku (iOS)-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Haiku (iOS)-frameworks.sh"; sourceTree = "<group>"; };
+		10C1987CCE7330271A225F32A33C0763 /* SwiftSyllables-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSyllables-dummy.m"; sourceTree = "<group>"; };
+		1928628EAA6C308A86528CDEABB57AA8 /* SwiftSyllablesHeuristic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSyllablesHeuristic.swift; path = SwiftSyllables/Classes/SwiftSyllablesHeuristic.swift; sourceTree = "<group>"; };
+		3159524AF4635037DFBB2C6807C717FA /* Pods-Haiku (iOS)-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Haiku (iOS)-dummy.m"; sourceTree = "<group>"; };
+		46838FBAA4D3E59E5B1DF5D5DA536363 /* cmudict */ = {isa = PBXFileReference; includeInIndex = 1; name = cmudict; path = SwiftSyllables/Assets/cmudict; sourceTree = "<group>"; };
+		4CBCFBECF15486B58576D9C3B7C2F33C /* SwiftSyllables.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSyllables.debug.xcconfig; sourceTree = "<group>"; };
+		4E07D7BF740608C94EEA1C59E8A402CB /* SwiftSyllables-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSyllables-umbrella.h"; sourceTree = "<group>"; };
+		571676654049573D5B0A9947B6C21C58 /* Pods-Haiku (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Haiku (iOS).debug.xcconfig"; sourceTree = "<group>"; };
+		5771B6C948E42E12C37F8EE434DCC922 /* SwiftSyllables-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftSyllables-Info.plist"; sourceTree = "<group>"; };
+		61ABE4AD14DE25B7BC2D541567CD38DC /* Pods-Haiku (iOS)-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Haiku (iOS)-umbrella.h"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8B5580C78BEAF654308BED8CD493EDC4 /* SwiftSyllables-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSyllables-prefix.pch"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0F0F07E0DC4624CB75E902DD75FA189 /* SwiftSyllables-CMUDict */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "SwiftSyllables-CMUDict"; path = CMUDict.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		A88E266D4D82616A42420F6AADC7B046 /* Pods-Haiku (iOS)-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Haiku (iOS)-acknowledgements.plist"; sourceTree = "<group>"; };
+		C22F482725D5E27D8EFFFC0AD70B3E2B /* SwiftSyllables */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftSyllables; path = SwiftSyllables.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C919898DC4C9FABC70B24D00F98AAF95 /* SwiftSyllables.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSyllables.swift; path = SwiftSyllables/Classes/SwiftSyllables.swift; sourceTree = "<group>"; };
+		D0878DDBAD552747C43118DA38633050 /* Pods-Haiku (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Haiku (iOS).release.xcconfig"; sourceTree = "<group>"; };
+		D730750B913BD7314F9C71B269CF6B36 /* Pods-Haiku (iOS)-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Haiku (iOS)-Info.plist"; sourceTree = "<group>"; };
+		D96445E0BD86F260FB21AEE9CDB7A83F /* ResourceBundle-CMUDict-SwiftSyllables-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-CMUDict-SwiftSyllables-Info.plist"; sourceTree = "<group>"; };
+		DF69F945C7DBEC34296410FC2C2ED23E /* Pods-Haiku (iOS)-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Haiku (iOS)-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E21DD41BC3CED52A3E1ABE8EA6B1DDCD /* Pods-Haiku (iOS) */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Haiku (iOS)"; path = Pods_Haiku__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E732BA0AA57B801144336738FAED6764 /* Pods-Haiku (iOS).modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Haiku (iOS).modulemap"; sourceTree = "<group>"; };
+		F8B276CCC3E6A1DE78108AB6E260467B /* SwiftSyllables.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSyllables.release.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07349A1D7317F4AA20DD9B43ADE91E37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3509ECE0BB65B61584711D5C1BE99A8B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F440BE221A559B9544482C949CA6E9C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF78884471DF1B1730F67A2A6D66C1C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0E5CE37BA702EE5F29B9668DE1C61C3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3277C9E3315B379ECCF7DF2864FF5A14 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D96445E0BD86F260FB21AEE9CDB7A83F /* ResourceBundle-CMUDict-SwiftSyllables-Info.plist */,
+				0DA65171128FAA9D7F0ABB7FA97D8AFF /* SwiftSyllables.modulemap */,
+				10C1987CCE7330271A225F32A33C0763 /* SwiftSyllables-dummy.m */,
+				5771B6C948E42E12C37F8EE434DCC922 /* SwiftSyllables-Info.plist */,
+				8B5580C78BEAF654308BED8CD493EDC4 /* SwiftSyllables-prefix.pch */,
+				4E07D7BF740608C94EEA1C59E8A402CB /* SwiftSyllables-umbrella.h */,
+				4CBCFBECF15486B58576D9C3B7C2F33C /* SwiftSyllables.debug.xcconfig */,
+				F8B276CCC3E6A1DE78108AB6E260467B /* SwiftSyllables.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftSyllables";
+			sourceTree = "<group>";
+		};
+		3C543E4BC306286985DC07E9F7D57BBC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6DC016237C25CB9A3FDBAB979E43085A /* SwiftSyllables */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		65E670927DC58E0DF26E2867EB461E5C /* Pods-Haiku (iOS) */ = {
+			isa = PBXGroup;
+			children = (
+				E732BA0AA57B801144336738FAED6764 /* Pods-Haiku (iOS).modulemap */,
+				DF69F945C7DBEC34296410FC2C2ED23E /* Pods-Haiku (iOS)-acknowledgements.markdown */,
+				A88E266D4D82616A42420F6AADC7B046 /* Pods-Haiku (iOS)-acknowledgements.plist */,
+				3159524AF4635037DFBB2C6807C717FA /* Pods-Haiku (iOS)-dummy.m */,
+				108AF252D6937D90EC5DC63F73B97EFB /* Pods-Haiku (iOS)-frameworks.sh */,
+				D730750B913BD7314F9C71B269CF6B36 /* Pods-Haiku (iOS)-Info.plist */,
+				61ABE4AD14DE25B7BC2D541567CD38DC /* Pods-Haiku (iOS)-umbrella.h */,
+				571676654049573D5B0A9947B6C21C58 /* Pods-Haiku (iOS).debug.xcconfig */,
+				D0878DDBAD552747C43118DA38633050 /* Pods-Haiku (iOS).release.xcconfig */,
+			);
+			name = "Pods-Haiku (iOS)";
+			path = "Target Support Files/Pods-Haiku (iOS)";
+			sourceTree = "<group>";
+		};
+		6DC016237C25CB9A3FDBAB979E43085A /* SwiftSyllables */ = {
+			isa = PBXGroup;
+			children = (
+				C919898DC4C9FABC70B24D00F98AAF95 /* SwiftSyllables.swift */,
+				1928628EAA6C308A86528CDEABB57AA8 /* SwiftSyllablesHeuristic.swift */,
+				A3125AE372966C38ACFDF8462F71D12A /* Resources */,
+				3277C9E3315B379ECCF7DF2864FF5A14 /* Support Files */,
+			);
+			name = SwiftSyllables;
+			path = SwiftSyllables;
+			sourceTree = "<group>";
+		};
+		78DFA20FE7962AB124AC66355AC6AD90 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				65E670927DC58E0DF26E2867EB461E5C /* Pods-Haiku (iOS) */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A3125AE372966C38ACFDF8462F71D12A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				46838FBAA4D3E59E5B1DF5D5DA536363 /* cmudict */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				3C543E4BC306286985DC07E9F7D57BBC /* Pods */,
+				CF3DA79E876C6954F041AE371D6A3C4D /* Products */,
+				78DFA20FE7962AB124AC66355AC6AD90 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		CF3DA79E876C6954F041AE371D6A3C4D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E21DD41BC3CED52A3E1ABE8EA6B1DDCD /* Pods-Haiku (iOS) */,
+				C22F482725D5E27D8EFFFC0AD70B3E2B /* SwiftSyllables */,
+				A0F0F07E0DC4624CB75E902DD75FA189 /* SwiftSyllables-CMUDict */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		006D00489A6F9E64AAA9EFF26865A537 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77D2EE64EC7D5412F33F0D96630EAFEC /* Pods-Haiku (iOS)-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BA47B503F7CA7EF62BEC6F0630BF860 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66521D9FAD13C06AC6CD4C0018841603 /* SwiftSyllables-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		127B94127D901BCFD6B06C5F7E0DE76B /* SwiftSyllables-CMUDict */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB0A51C75B90775A6B981983A19D55C2 /* Build configuration list for PBXNativeTarget "SwiftSyllables-CMUDict" */;
+			buildPhases = (
+				5E05774490B27730EF0EB131F69399E8 /* Sources */,
+				F440BE221A559B9544482C949CA6E9C0 /* Frameworks */,
+				054276D79B63EE02D255983A4A801B60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftSyllables-CMUDict";
+			productName = CMUDict;
+			productReference = A0F0F07E0DC4624CB75E902DD75FA189 /* SwiftSyllables-CMUDict */;
+			productType = "com.apple.product-type.bundle";
+		};
+		348428FEA01AD104131B7E8E8AE62C1E /* SwiftSyllables */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 032B7F90FDA9A3BCEE1BF2CBE5BCAE74 /* Build configuration list for PBXNativeTarget "SwiftSyllables" */;
+			buildPhases = (
+				4BA47B503F7CA7EF62BEC6F0630BF860 /* Headers */,
+				8825139F73DAAC04226F476AFCF5BEF6 /* Sources */,
+				07349A1D7317F4AA20DD9B43ADE91E37 /* Frameworks */,
+				CFCF5606F961814D877F6689F9EC1607 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8D53C6FA01757C86AD9D47EF0D6E19D /* PBXTargetDependency */,
+			);
+			name = SwiftSyllables;
+			productName = SwiftSyllables;
+			productReference = C22F482725D5E27D8EFFFC0AD70B3E2B /* SwiftSyllables */;
+			productType = "com.apple.product-type.framework";
+		};
+		FD20D4BBCC75DC3E5AD5FA3F362DCA72 /* Pods-Haiku (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46113F880A09105AF9F448FE6138AC89 /* Build configuration list for PBXNativeTarget "Pods-Haiku (iOS)" */;
+			buildPhases = (
+				006D00489A6F9E64AAA9EFF26865A537 /* Headers */,
+				A3BAFB5FB1122679059804C95A718035 /* Sources */,
+				FF78884471DF1B1730F67A2A6D66C1C9 /* Frameworks */,
+				6F8DD41368FD6484C99389D596171489 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFA81FE011623C83EA7F4F635E607AE7 /* PBXTargetDependency */,
+			);
+			name = "Pods-Haiku (iOS)";
+			productName = Pods_Haiku__iOS_;
+			productReference = E21DD41BC3CED52A3E1ABE8EA6B1DDCD /* Pods-Haiku (iOS) */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = CF3DA79E876C6954F041AE371D6A3C4D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD20D4BBCC75DC3E5AD5FA3F362DCA72 /* Pods-Haiku (iOS) */,
+				348428FEA01AD104131B7E8E8AE62C1E /* SwiftSyllables */,
+				127B94127D901BCFD6B06C5F7E0DE76B /* SwiftSyllables-CMUDict */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		054276D79B63EE02D255983A4A801B60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1D2CD7A1B85128928071A2E6D8FC3A4 /* cmudict in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F8DD41368FD6484C99389D596171489 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFCF5606F961814D877F6689F9EC1607 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55E3A6AD306308B3446F271C53E72A65 /* SwiftSyllables-CMUDict in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E05774490B27730EF0EB131F69399E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8825139F73DAAC04226F476AFCF5BEF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA94C9EBD08F59C38B1AAB9D3A82140D /* SwiftSyllables.swift in Sources */,
+				557033B9628D9DB5D855C51474EF0CCD /* SwiftSyllables-dummy.m in Sources */,
+				F033DC818046F70C76C202E80229EE8F /* SwiftSyllablesHeuristic.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3BAFB5FB1122679059804C95A718035 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				584156291F41A41A41D439FA507F546D /* Pods-Haiku (iOS)-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A8D53C6FA01757C86AD9D47EF0D6E19D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SwiftSyllables-CMUDict";
+			target = 127B94127D901BCFD6B06C5F7E0DE76B /* SwiftSyllables-CMUDict */;
+			targetProxy = A22E246253B78987EE0EB883685BF74C /* PBXContainerItemProxy */;
+		};
+		DFA81FE011623C83EA7F4F635E607AE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftSyllables;
+			target = 348428FEA01AD104131B7E8E8AE62C1E /* SwiftSyllables */;
+			targetProxy = 38F96B136E44A922D6601307655BE99A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		23EEEF7964FD6F0317F1E5B912DF005F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CBCFBECF15486B58576D9C3B7C2F33C /* SwiftSyllables.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SwiftSyllables";
+				IBSC_MODULE = SwiftSyllables;
+				INFOPLIST_FILE = "Target Support Files/SwiftSyllables/ResourceBundle-CMUDict-SwiftSyllables-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PRODUCT_NAME = CMUDict;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5633A04CC06CA62C5D350E319784D337 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8B276CCC3E6A1DE78108AB6E260467B /* SwiftSyllables.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSyllables/SwiftSyllables-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSyllables/SwiftSyllables-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftSyllables/SwiftSyllables.modulemap";
+				PRODUCT_MODULE_NAME = SwiftSyllables;
+				PRODUCT_NAME = SwiftSyllables;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7F38AB642D25391DD393BACD9B8AFBB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 571676654049573D5B0A9947B6C21C58 /* Pods-Haiku (iOS).debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Haiku (iOS)/Pods-Haiku (iOS)-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Haiku (iOS)/Pods-Haiku (iOS).modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BF796857B010FDDB7D360AEB26651EAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CBCFBECF15486B58576D9C3B7C2F33C /* SwiftSyllables.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSyllables/SwiftSyllables-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSyllables/SwiftSyllables-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftSyllables/SwiftSyllables.modulemap";
+				PRODUCT_MODULE_NAME = SwiftSyllables;
+				PRODUCT_NAME = SwiftSyllables;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C392A1DF836F2F8924C1CC5E8B70376F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8B276CCC3E6A1DE78108AB6E260467B /* SwiftSyllables.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SwiftSyllables";
+				IBSC_MODULE = SwiftSyllables;
+				INFOPLIST_FILE = "Target Support Files/SwiftSyllables/ResourceBundle-CMUDict-SwiftSyllables-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PRODUCT_NAME = CMUDict;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		CC8E2A546876B8C9BB5EEA1499B210EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0878DDBAD552747C43118DA38633050 /* Pods-Haiku (iOS).release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Haiku (iOS)/Pods-Haiku (iOS)-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Haiku (iOS)/Pods-Haiku (iOS).modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		032B7F90FDA9A3BCEE1BF2CBE5BCAE74 /* Build configuration list for PBXNativeTarget "SwiftSyllables" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF796857B010FDDB7D360AEB26651EAA /* Debug */,
+				5633A04CC06CA62C5D350E319784D337 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46113F880A09105AF9F448FE6138AC89 /* Build configuration list for PBXNativeTarget "Pods-Haiku (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F38AB642D25391DD393BACD9B8AFBB1 /* Debug */,
+				CC8E2A546876B8C9BB5EEA1499B210EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB0A51C75B90775A6B981983A19D55C2 /* Build configuration list for PBXNativeTarget "SwiftSyllables-CMUDict" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23EEEF7964FD6F0317F1E5B912DF005F /* Debug */,
+				C392A1DF836F2F8924C1CC5E8B70376F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

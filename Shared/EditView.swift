@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftSyllables
 
 struct EditView: View {
     
@@ -48,7 +49,7 @@ struct EditView: View {
     var body: some View {
         
         ZStack{
-            Color.yellow.ignoresSafeArea()
+            LinearGradient(gradient: Gradient(colors: [Color.purple, Color.white]), startPoint: .topLeading, endPoint: .bottomTrailing).ignoresSafeArea()
             
             VStack{
                 
@@ -76,7 +77,13 @@ struct EditView: View {
                         HStack{
                             Spacer()
                             
-                            Text("5").font(.title).fontWeight(.bold).foregroundColor(.black)
+                            if(SwiftSyllables.getSyllables(editLine1) != 5){
+                                Text("5").font(.title).fontWeight(.bold).foregroundColor(.red)
+                            }
+                            else{
+                                Text("5").font(.title).fontWeight(.bold).foregroundColor(.green)
+                            }
+                            
                              
                             
                             TextField("Line 1", text: $editLine1)
@@ -88,7 +95,12 @@ struct EditView: View {
                         HStack{
                             Spacer()
                             
-                            Text("7").font(.title).fontWeight(.bold).foregroundColor(.black)
+                            if(SwiftSyllables.getSyllables(editLine2) != 7){
+                                Text("7").font(.title).fontWeight(.bold).foregroundColor(.red)
+                            }
+                            else{
+                                Text("7").font(.title).fontWeight(.bold).foregroundColor(.green)
+                            }
                             
                             TextField("Line 2", text: $editLine2)
                                 .frame(width:300).multilineTextAlignment(.center).textFieldStyle(RoundedBorderTextFieldStyle())
@@ -99,7 +111,12 @@ struct EditView: View {
                         HStack{
                             Spacer()
                             
-                            Text("5").font(.title).fontWeight(.bold).foregroundColor(.black).textFieldStyle(RoundedBorderTextFieldStyle())
+                            if(SwiftSyllables.getSyllables(editLine3) != 5){
+                                Text("5").font(.title).fontWeight(.bold).foregroundColor(.red)
+                            }
+                            else{
+                                Text("5").font(.title).fontWeight(.bold).foregroundColor(.green)
+                            }
                              
                             
                             TextField("Line 3", text: $editLine3).frame(width: 200).multilineTextAlignment(.center).textFieldStyle(RoundedBorderTextFieldStyle())

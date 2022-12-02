@@ -1,0 +1,6 @@
+framework module Pods_Haiku__iOS_ {
+  umbrella header "Pods-Haiku (iOS)-umbrella.h"
+
+  export *
+  module * { export * }
+}
