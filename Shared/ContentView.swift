@@ -43,7 +43,7 @@ struct ContentView: View {
                     
                     .foregroundColor(/*@START_MENU_TOKEN@*/.white/*@END_MENU_TOKEN@*/)
                     .padding()
-                    .background(Color.black)
+                    .background(Color.black).cornerRadius(/*@START_MENU_TOKEN@*/15.0/*@END_MENU_TOKEN@*/)
                     
                     
                 }

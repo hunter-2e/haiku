@@ -42,7 +42,7 @@ struct CalendarView: View{
                 })
                 .foregroundColor(.white)
                 .padding()
-                .background(Color.black)
+                .background(Color.black).cornerRadius(/*@START_MENU_TOKEN@*/15.0/*@END_MENU_TOKEN@*/)
                 
                 
                 Spacer()

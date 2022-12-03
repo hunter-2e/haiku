@@ -77,7 +77,10 @@ struct EditView: View {
                         HStack{
                             Spacer()
                             
-                            if(SwiftSyllables.getSyllables(editLine1) != 5){
+                            if(SwiftSyllables.getSyllables(editLine1) == 0){
+                                Text("5").font(.title).fontWeight(.bold).foregroundColor(.white)
+                            }
+                            else if(SwiftSyllables.getSyllables(editLine1) != 5){
                                 Text("5").font(.title).fontWeight(.bold).foregroundColor(.red)
                             }
                             else{
@@ -95,7 +98,10 @@ struct EditView: View {
                         HStack{
                             Spacer()
                             
-                            if(SwiftSyllables.getSyllables(editLine2) != 7){
+                            if(SwiftSyllables.getSyllables(editLine2) == 0){
+                                Text("7").font(.title).fontWeight(.bold).foregroundColor(.white)
+                            }
+                            else if(SwiftSyllables.getSyllables(editLine2) != 7){
                                 Text("7").font(.title).fontWeight(.bold).foregroundColor(.red)
                             }
                             else{
@@ -111,7 +117,10 @@ struct EditView: View {
                         HStack{
                             Spacer()
                             
-                            if(SwiftSyllables.getSyllables(editLine3) != 5){
+                            if(SwiftSyllables.getSyllables(editLine3) == 0){
+                                Text("5").font(.title).fontWeight(.bold).foregroundColor(.white)
+                            }
+                            else if(SwiftSyllables.getSyllables(editLine3) != 5){
                                 Text("5").font(.title).fontWeight(.bold).foregroundColor(.red)
                             }
                             else{
