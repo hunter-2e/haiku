@@ -16,7 +16,7 @@ struct CalendarView: View{
     var body: some View {
 
         ZStack{
-            LinearGradient(gradient: Gradient(colors: [Color.purple, Color.white]), startPoint: .topLeading, endPoint: .bottomTrailing).ignoresSafeArea()
+            Color.purple.ignoresSafeArea().saturation(0.5)
             
             
             VStack{

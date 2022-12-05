@@ -14,7 +14,7 @@ struct EditView: View {
     @Binding var haikus:[String:String]
     @Binding var defaults:UserDefaults
 
-    
+    let SavedHaikus = [String:String]()
     let changeToDay = DateFormatter()
     
     var editDate:String {
@@ -28,7 +28,7 @@ struct EditView: View {
             return true
         }
         else {
-            return false
+            return true
         }
     }
     
@@ -37,7 +37,7 @@ struct EditView: View {
     @State var backToCalendar = false
     
     var haiku:String {
-        let savedHaikus = defaults.object(forKey: "SavedHaikus") as? [String:String] ?? [:]
+        let savedHaikus = defaults.object(forKey: "SavedHaikus") as? [String:String] ?? [String:String]()
         return savedHaikus[editDate, default: ""]
     }
     
@@ -49,7 +49,7 @@ struct EditView: View {
     var body: some View {
         
         ZStack{
-            LinearGradient(gradient: Gradient(colors: [Color.purple, Color.white]), startPoint: .topLeading, endPoint: .bottomTrailing).ignoresSafeArea()
+            Color.purple.ignoresSafeArea().saturation(0.5)
             
             VStack{
                 
@@ -144,6 +144,9 @@ struct EditView: View {
                             
                             Button("Save"){
                                 haikus[editDate] = editLine1 + "\n" + editLine2 + "\n" + editLine3
+                                
+                                print(haikus)
+                                print("ASDF")
                                 
                                 defaults.set(haikus, forKey: "SavedHaikus")
                                 
